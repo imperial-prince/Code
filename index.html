@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Shruti!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-happy-birthday-to-you-443.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">For Shruti</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#wishes" class="nav-link">Wishes</a>
+                <a href="#letter" class="nav-link">Letter</a>
+                <a href="#cake" class="nav-link">Celebration</a>
+                <a href="#charm" class="nav-link">Divine Protection</a>
+                <a href="#blessings" class="nav-link">Divine Blessings</a>
+                <a href="#future" class="nav-link">Future Blessings</a>
+                <a href="#final" class="nav-link">Final</a>
+            </div>
+            <button id="music-toggle" class="music-btn">
+                <i class="fas fa-volume-up"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-bg"></div>
+                <div class="hero-content">
+                    <div class="birthday-glass">
+                        <div class="birthday-text">
+                            <h1 class="birthday-title">Happy Birthday</h1>
+                            <h2 class="birthday-name">Shruti!</h2>
+                            <p class="birthday-subtitle">May your special day be filled with divine blessings and joyous moments</p>
+                        </div>
+                    </div>
+                    <div class="hero-animation">
+                        <!-- Balloons will be added by JavaScript -->
+                    </div>
+                    <button class="cta-button explore-btn">
+                        <i class="fas fa-arrow-down"></i> Explore Blessings
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wishes Section -->
+        <section id="wishes" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Birthday Blessings</h2>
+                <div class="wishes-grid">
+                    <div class="wish-card" data-delay="0">
+                        <div class="wish-icon">✨</div>
+                        <h3>Divine Light</h3>
+                        <p>May divine light always illuminate your path and guide you toward happiness and fulfillment.</p>
+                    </div>
+                    <div class="wish-card" data-delay="0.2">
+                        <div class="wish-icon">🌟</div>
+                        <h3>Eternal Joy</h3>
+                        <p>May your life be filled with everlasting joy, peace, and contentment in every moment.</p>
+                    </div>
+                    <div class="wish-card" data-delay="0.4">
+                        <div class="wish-icon">💖</div>
+                        <h3>Pure Love</h3>
+                        <p>May you always be surrounded by genuine love and meaningful connections.</p>
+                    </div>
+                    <div class="wish-card" data-delay="0.6">
+                        <div class="wish-icon">🕊️</div>
+                        <h3>Inner Peace</h3>
+                        <p>May tranquility and serenity always reside within your beautiful soul.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Letter Section -->
+        <section id="letter" class="section">
+            <div class="section-container">
+                <h2 class="section-title">A Heartfelt Message</h2>
+                <div class="letter-wrapper">
+                    <div class="envelope" id="envelope">
+                        <div class="envelope-front">
+                            <div class="envelope-heart">💌</div>
+                            <p>Click to open</p>
+                        </div>
+                        <div class="envelope-back"></div>
+                    </div>
+                    <div class="letter-content" id="letter-content">
+                        <div class="letter-header">
+                            <h3>To My Dearest Shruti,</h3>
+                        </div>
+                        <div class="letter-body">
+                            <p>Happy Birthday, Shruti.</p>
+                            <p>I don't say things like this often, but you deserve it.</p>
+                            <p>Thank you for being the one person who stayed real with me—no games, no noise, no pretence. You've seen me in my silent moods, my confused phases, my overthinking… and you still understood me without forcing anything. That means more than I can ever explain.</p>
+                            <p>You've always been gentle, warm, and genuine in a world where most people aren't. You make things feel lighter. You make life feel less complicated.</p>
+                            <p>I just want this year to give you everything you've been quietly hoping for—peace, clarity, happiness, and people who treat you with the same honesty and kindness you give.</p>
+                            <p>Stay the same, Shruti. You're rare.</p>
+                            <p>And I'm grateful you're in my life.</p>
+                            <p class="letter-closing">Happy Birthday.<br>Your Param Mitra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cake Section -->
+        <section id="cake" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Make a Birthday Wish</h2>
+                <div class="cake-container">
+                    <div class="cake-scene">
+                        <div class="cake">
+                            <div class="cake-base"></div>
+                            <div class="cake-top"></div>
+                            <div class="cake-decoration"></div>
+                            <div class="candle" id="candle">
+                                <div class="candle-stick"></div>
+                                <div class="flame" id="flame"></div>
+                            </div>
+                            <div class="cake-shadow"></div>
+                        </div>
+                        <div class="cake-plate"></div>
+                    </div>
+                    <button class="blow-btn" id="blow-btn">
+                        <i class="fas fa-wind"></i> Blow Out Candle & Make a Wish
+                    </button>
+                    <div class="wish-message" id="wish-message">
+                        <h3>🎉 Your wish will come true! 🎉</h3>
+                        <p>May the universe conspire to fulfill all your heartfelt desires!</p>
+                    </div>
+                </div>
+                
+                <div class="sanskrit-wishes">
+                    <div class="sanskrit-card">
+                        <div class="sanskrit-text">"आयुरारोग्यसौभाग्यं<br>भवतु ते सदा सुखम्"</div>
+                        <div class="sanskrit-meaning">"May you always be blessed with long life, health, prosperity, and happiness"</div>
+                    </div>
+                    <div class="sanskrit-card">
+                        <div class="sanskrit-text">"सर्वे भवन्तु सुखिनः<br>सर्वे सन्तु निरामयाः"</div>
+                        <div class="sanskrit-meaning">"May all be happy, may all be free from illness"</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charm Section -->
+        <section id="charm" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Divine Protection</h2>
+                <div class="charm-container">
+                    <div class="charm-circle">
+                        <div class="charm-symbol">ॐ</div>
+                    </div>
+                    <div class="charm-text">
+                        <p>This sacred <strong>Om</strong> symbol carries the vibration of the universe and offers divine protection. May it surround you with positive energy, spiritual light, and eternal blessings.</p>
+                        <p>In Sanatan Dharma, Om represents the ultimate reality, consciousness, and the eternal truth. May this sacred symbol guide you, protect you from all negativity, and bring peace to your soul.</p>
+                        <p>Carry this divine vibration in your heart, and may it remind you of your inner strength and connection to the cosmic energy that flows through all things.</p>
+                        <div class="mantra-section">
+                            <h3>Protective Mantra</h3>
+                            <p class="mantra">"ॐ सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः।<br>सर्वे भद्राणि पश्यन्तु मा कश्चिद्दुःखभाग्भवेत्॥"</p>
+                            <p class="mantra-meaning">"May all be happy, may all be free from diseases,<br>May all see what is auspicious, may no one suffer from grief."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blessings Section -->
+        <section id="blessings" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Divine Blessings</h2>
+                <div class="blessings-container">
+                    <div class="blessings-grid">
+                        <div class="blessing-card">
+                            <div class="blessing-icon">🪔</div>
+                            <h3>Lakshmi's Blessings</h3>
+                            <p>May Goddess Lakshmi bless you with abundance, prosperity, and fulfillment in all aspects of life.</p>
+                            <div class="sanskrit-blessing">
+                                <p class="sanskrit-text">"धनधान्यप्रजासौख्यं<br>देहि देवि नमोऽस्तु ते"</p>
+                                <p class="sanskrit-meaning">"O Goddess, grant us wealth, grain, progeny and happiness"</p>
+                            </div>
+                        </div>
+                        <div class="blessing-card">
+                            <div class="blessing-icon">📿</div>
+                            <h3>Saraswati's Wisdom</h3>
+                            <p>May Goddess Saraswati bless you with knowledge, creativity, and eloquent expression.</p>
+                            <div class="sanskrit-blessing">
+                                <p class="sanskrit-text">"या कुन्देन्दुतुषारहारधवला<br>या शुभ्रवस्त्रावृता"</p>
+                                <p class="sanskrit-meaning">"Who is pure white like jasmine, moon and snow"</p>
+                            </div>
+                        </div>
+                        <div class="blessing-card">
+                            <div class="blessing-icon">🕉️</div>
+                            <h3>Shiva's Protection</h3>
+                            <p>May Lord Shiva protect you from all negativity and guide you toward spiritual enlightenment.</p>
+                            <div class="sanskrit-blessing">
+                                <p class="sanskrit-text">"ॐ नमः शिवाय"</p>
+                                <p class="sanskrit-meaning">"I bow to Lord Shiva, the auspicious one"</p>
+                            </div>
+                        </div>
+                        <div class="blessing-card">
+                            <div class="blessing-icon">🌺</div>
+                            <h3>Vishnu's Grace</h3>
+                            <p>May Lord Vishnu's divine grace bring peace, harmony, and balance to your life's journey.</p>
+                            <div class="sanskrit-blessing">
+                                <p class="sanskrit-text">"ॐ नमो नारायणाय"</p>
+                                <p class="sanskrit-meaning">"I bow to Lord Vishnu, the supreme being"</p>
+                            </div>
+                        </div>
+                        <div class="blessing-card">
+                            <div class="blessing-icon">🐘</div>
+                            <h3>Ganesha's Guidance</h3>
+                            <p>May Lord Ganesha remove all obstacles and bless you with wisdom and success.</p>
+                            <div class="sanskrit-blessing">
+                                <p class="sanskrit-text">"वक्रतुण्ड महाकाय<br>सूर्यकोटि समप्रभ"</p>
+                                <p class="sanskrit-meaning">"O Lord with curved trunk and massive body, whose splendor is equal to millions of suns"</p>
+                            </div>
+                        </div>
+                        <div class="blessing-card">
+                            <div class="blessing-icon">🌞</div>
+                            <h3>Surya's Energy</h3>
+                            <p>May Lord Surya fill your life with vibrant energy, health, and vitality.</p>
+                            <div class="sanskrit-blessing">
+                                <p class="sanskrit-text">"जपाकुसुमसंकाशं<br>काश्यपेयं महाद्युतिम्"</p>
+                                <p class="sanskrit-meaning">"I meditate on the Sun God, who has the brilliance of the hibiscus flower"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section id="future" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Blessings for Your Future</h2>
+                <div class="future-container">
+                    <div class="future-grid">
+                        <div class="future-card">
+                            <div class="future-icon">🌟</div>
+                            <h3>Boundless Success</h3>
+                            <p>May every endeavor you undertake be met with success and recognition.</p>
+                            <div class="sanskrit-blessing">
+                                <p class="sanskrit-text">"सिद्धिर्भवतु मे सदा"</p>
+                                <p class="sanskrit-meaning">"May I always achieve success"</p>
+                            </div>
+                        </div>
+                        <div class="future-card">
+                            <div class="future-icon">💖</div>
+                            <h3>Everlasting Joy</h3>
+                            <p>May happiness find you in every moment and peace reside in your heart always.</p>
+                            <div class="sanskrit-blessing">
+                                <p class="sanskrit-text">"आनन्दं परमं प्राप्तः"</p>
+                                <p class="sanskrit-meaning">"Attain the supreme bliss"</p>
+                            </div>
+                        </div>
+                        <div class="future-card">
+                            <div class="future-icon">🌍</div>
+                            <h3>Beautiful Journeys</h3>
+                            <p>May your life's journey be filled with wonderful experiences and meaningful connections.</p>
+                            <div class="sanskrit-blessing">
+                                <p class="sanskrit-text">"सर्वत्र सुखसंवासः"</p>
+                                <p class="sanskrit-meaning">"May you find happiness everywhere"</p>
+                            </div>
+                        </div>
+                        <div class="future-card">
+                            <div class="future-icon">📚</div>
+                            <h3>Continuous Growth</h3>
+                            <p>May you always find opportunities to learn, grow, and evolve into your best self.</p>
+                            <div class="sanskrit-blessing">
+                                <p class="sanskrit-text">"विद्यां ददाति विनयं"</p>
+                                <p class="sanskrit-meaning">"Knowledge gives humility"</p>
+                            </div>
+                        </div>
+                        <div class="future-card">
+                            <div class="future-icon">🤝</div>
+                            <h3>Genuine Connections</h3>
+                            <p>May you be surrounded by people who appreciate your true worth and celebrate your essence.</p>
+                            <div class="sanskrit-blessing">
+                                <p class="sanskrit-text">"मैत्री भवन्तु सर्वत्र"</p>
+                                <p class="sanskrit-meaning">"May friendship prevail everywhere"</p>
+                            </div>
+                        </div>
+                        <div class="future-card">
+                            <div class="future-icon">🌈</div>
+                            <h3>Colorful Adventures</h3>
+                            <p>May your life be a beautiful tapestry of exciting adventures and cherished memories.</p>
+                            <div class="sanskrit-blessing">
+                                <p class="sanskrit-text">"जीवनं सुन्दरं भवतु"</p>
+                                <p class="sanskrit-meaning">"May life be beautiful"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Message Section -->
+        <section id="final" class="section">
+            <div class="section-container">
+                <div class="final-container">
+                    <div class="final-message">
+                        <h2>Happy Birthday Once Again!</h2>
+                        
+                        <p>I'm sorry if this wish is reaching you a little late, but my wishes for your happiness are always on time in my heart.</p>
+                        <p>Enjoy your day to the fullest, and may your future be filled with all the joy, success, and beautiful moments you deserve.</p>
+                        <p>Whether I'm present in your life or not, know that I will always wish for your happiness.</p>
+                        <div class="final-sanskrit">
+                            <p class="sanskrit-text">"सजन्मना शुभमस्तु<br>तव जन्मदिने शुभम्"</p>
+                            <p class="sanskrit-meaning">"May your birthday and entire life be filled with auspiciousness"</p>
+                        </div>
+                        <p class="closing">With divine blessings and warmest wishes,<br>Your Param Mitra</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Elements Container -->
+    <div class="floating-elements"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
